@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Madi Sapek &mdash; My First Webpage</h1>
+        <p class="tagline">Web Technologies course &middot; Assignment #1</p>
+
+        <nav class="site-nav">
+            <a href="#about-me">About Me</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#websites">Favorite Websites</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#mood">Mood</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about-me" class="profile-card">
+            <h2>About Me</h2>
+            <img class="avatar" src="images/avatar.svg" alt="Cartoon avatar of Madi Sapek, a smiling student with glasses">
+            <p>
+                Hi! My name is <strong>Madi Sapek</strong>. I am a student of the
+                <em>Web Technologies</em> course, and this is the very first webpage
+                I have built with my own HTML and CSS. I am learning how the web works
+                from the inside &mdash; one tag at a time.
+            </p>
+            <h3>Why I study web development</h3>
+            <p>
+                I like that a simple text file can turn into a page that anyone in the
+                world can open. My goal this semester is to write clean, readable code
+                and to understand what every line does.
+            </p>
+        </section>
+
+        <section id="hobbies" class="content-card">
+            <h2>My Hobbies</h2>
+            <ol class="hobby-list">
+                <li>Playing chess with friends</li>
+                <li>Cycling around the city</li>
+                <li>Reading science fiction books</li>
+                <li>Learning to cook new dishes</li>
+            </ol>
+        </section>
+
+        <section id="websites" class="content-card">
+            <h2>Favorite Websites</h2>
+            <ul class="website-list">
+                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> &mdash; the best HTML/CSS reference</li>
+                <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a> &mdash; for learning anything</li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a> &mdash; video tutorials and music</li>
+            </ul>
+        </section>
+
+        <section id="schedule" class="content-card">
+            <h2>My Class Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Technologies</td>
+                        <td>Monday</td>
+                        <td>09:00 &ndash; 10:30</td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Tuesday</td>
+                        <td>11:00 &ndash; 12:30</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Wednesday</td>
+                        <td>09:00 &ndash; 10:30</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>Thursday</td>
+                        <td>14:00 &ndash; 15:30</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Education</td>
+                        <td>Friday</td>
+                        <td>10:00 &ndash; 11:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="mood" class="content-card">
+            <h2>My Mood Today</h2>
+            <p class="mood-text">
+                Today I feel great because my first webpage is finally working!
+                Writing CSS is like painting with code, and when the colors come
+                together I want to celebrate. Coffee helps too.
+            </p>
+        </section>
+
+        <section id="contact" class="content-card">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="get">
+                <label for="visitor-name">Name</label>
+                <input type="text" id="visitor-name" name="visitor-name" placeholder="Your name">
+
+                <label for="visitor-email">Email</label>
+                <input type="email" id="visitor-email" name="visitor-email" placeholder="you@example.com">
+
+                <label for="favorite-color">Favorite Color</label>
+                <input type="color" id="favorite-color" name="favorite-color" value="#2f6f4f">
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <button type="button" class="click-me-button">Click Me</button>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Madi Sapek. Built with HTML &amp; CSS for Assignment #1.</p>
+    </footer>
+
+</body>
+</html>
